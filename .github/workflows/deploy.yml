@@ -17,7 +17,10 @@ jobs:
       # Pick your own package manager and build script
       - run: pnpm install
       - run: node fetchFavicons.js
-      - run: NUXT_APP_BASE_URL=/nutab/ NITRO_PRESET=github_pages npx nuxt build
+      - run: npx nuxt build
+        env:
+          NUXT_APP_BASE_URL: /nutab/
+          NITRO_PRESET: github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
