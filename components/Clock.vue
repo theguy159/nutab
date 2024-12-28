@@ -57,6 +57,7 @@ export default {
   font-size: 10vw;
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 4vh;
 }
 .inner {
   justify-self: center;
