@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: corepack enable
+      - run: corepack enable pnpm
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
       # Pick your own package manager and build script
-      - run: npm install
+      - run: pnpm install
       - run: node fetchFavicons.js
       - run: NUXT_APP_BASE_URL=/nutab/ NITRO_PRESET=github_pages npx nuxt build
       - name: Upload artifact
