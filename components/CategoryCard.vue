@@ -5,7 +5,7 @@ function getFavicon(link) {
   return link.icon ? link.icon : `/nutab/favicons/${new URL(link.href).hostname.replace(/\./g, '_')}.ico`;
 }
 function useFallback(event) {
-  event.target.src = '/favicons/default.png';
+  event.target.src = '/nutab/default_favicon.png';
 }
 </script>
 <template>
