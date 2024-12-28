@@ -3,39 +3,39 @@
     {
       "title": "Social",
       "links": [
-        { "title": "Gmail", "href": "https://gmail.com"},
-        { "title": "Messenger", "href": "https://www.messenger.com"},
-        { "title": "Reddit", "href": "https://reddit.com"},
-        { "title": "Twitter", "href": "https://twitter.com"},
-        { "title": "Elk", "href": "https://elk.crackle.home.arpa"}
+        { "title": "Gmail", "href": "https://gmail.com" },
+        { "title": "Messenger", "href": "https://www.messenger.com" },
+        { "title": "Reddit", "href": "https://reddit.com" },
+        { "title": "Twitter", "href": "https://twitter.com" },
+        { "title": "Elk", "href": "https://elk.crackle.home.arpa" }
       ]
     },
     {
       "title": "News",
       "links": [
-        { "title": "Tek", "href": "https://tek.no"},
-        { "title": "VG", "href": "https://vg.no"},
-        { "title": "Dagbladet", "href": "https://db.no"},
-        { "title": "NRK", "href": "https://nrk.no"},
-        { "title": "Hacker news", "href": "https://news.ycombinator.com", "icon": "/favicons/news_ycombinator_com.svg" }
+        { "title": "Tek", "href": "https://tek.no" },
+        { "title": "VG", "href": "https://vg.no" },
+        { "title": "Dagbladet", "href": "https://db.no" },
+        { "title": "NRK", "href": "https://nrk.no" },
+        { "title": "Hacker news", "href": "https://news.ycombinator.com", "icon": "/nutab/custom_favicons/news_ycombinator_com.svg" }
       ]
     },
     {
       "title": "Video",
       "links": [
-        { "title": "YouTube", "href": "https://www.youtube.com/feed/subscriptions"},
-        { "title": "Twitch", "href": "https://twitch.tv/"},
-        { "title": "Netflix", "href": "https://netflix.com/"},
-        { "title": "Prime Video", "href": "https://primevideo.com/"},
-        { "title": "Max", "href": "https://play.max.com/home"},
-        { "title": "Viaplay", "href": "https://viaplay.no/"},
-        { "title": "Jellyfin", "href": "https://jellyfin.crackle.home.arpa/"}
+        { "title": "YouTube", "href": "https://www.youtube.com/feed/subscriptions" },
+        { "title": "Twitch", "href": "https://twitch.tv/" },
+        { "title": "Netflix", "href": "https://netflix.com/" },
+        { "title": "Prime Video", "href": "https://primevideo.com/" },
+        { "title": "Max", "href": "https://play.max.com/home" },
+        { "title": "Viaplay", "href": "https://viaplay.no/" },
+        { "title": "Jellyfin", "href": "https://jellyfin.crackle.home.arpa/" }
       ]
     },
     {
       "title": "Music",
       "links": [
-        { "title": "Soundcloud", "href": "https://soundcloud.com"}
+        { "title": "Soundcloud", "href": "https://soundcloud.com" }
       ]
     }
   ]
