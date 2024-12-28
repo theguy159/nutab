@@ -2,7 +2,7 @@
 defineProps(['title', 'links'])
 
 function getFavicon(link) {
-  return link.icon ? link.icon : `/favicons/${new URL(link.href).hostname.replace(/\./g, '_')}.ico`;
+  return link.icon ? link.icon : `/nutab/favicons/${new URL(link.href).hostname.replace(/\./g, '_')}.ico`;
 }
 function useFallback(event) {
   event.target.src = '/favicons/default.png';
@@ -13,7 +13,7 @@ function useFallback(event) {
     <h2>{{ title }}:</h2>
     <ul>
       <li v-for="link in links">
-        <img :src="getFavicon(link)" @error="useFallback" alt="Favicon">
+        <img :src="getFavicon(link)" @error="useFallback" alt="Favicon" />
         <a :href="link.href">{{link.title}}</a>
       </li>
     </ul>
