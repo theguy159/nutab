@@ -12,7 +12,7 @@ const configPath = path.join(__dirname, 'assets/config.json');
 const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
 
 // Extract all href links from categories
-const links = config.categories.flatMap(category => category.links.map(link => link.href));
+const links = config.categories.flatMap(category => category.links.filter(link => !link.hasOwnProperty('icon')).map(link => link.href));
 
 // Output directory for favicons
 const outputDir = path.join(__dirname, 'public/favicons');

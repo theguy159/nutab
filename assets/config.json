@@ -7,7 +7,7 @@
         { "title": "Messenger", "href": "https://www.messenger.com" },
         { "title": "Reddit", "href": "https://reddit.com" },
         { "title": "Twitter", "href": "https://twitter.com" },
-        { "title": "Elk", "href": "https://elk.crackle.home.arpa" }
+        { "title": "Elk", "href": "https://elk.crackle.home.arpa", "icon": "/nutab/custom_favicons/elk.svg" }
       ]
     },
     {
@@ -29,7 +29,7 @@
         { "title": "Prime Video", "href": "https://primevideo.com/" },
         { "title": "Max", "href": "https://play.max.com/home" },
         { "title": "Viaplay", "href": "https://viaplay.no/" },
-        { "title": "Jellyfin", "href": "https://jellyfin.crackle.home.arpa/" }
+        { "title": "Jellyfin", "href": "https://jellyfin.crackle.home.arpa/", "icon": "/nutab/custom_favicons/jellyfin.png" }
       ]
     },
     {
