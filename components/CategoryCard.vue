@@ -25,7 +25,7 @@ ul {
   list-style-type: none;
 }
 .card {
-  border: .4rem solid #80e;
+  border: .4rem solid #eee;
   border-radius: 0rem;
   padding: 1.6rem;
 }
