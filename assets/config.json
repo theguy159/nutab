@@ -6,6 +6,7 @@
         { "title": "Gmail", "href": "https://gmail.com" },
         { "title": "Messenger", "href": "https://www.messenger.com" },
         { "title": "Reddit", "href": "https://reddit.com" },
+        { "title": "Bluesky", "href": "https://bsky.app/" },
         { "title": "Twitter", "href": "https://twitter.com" },
         { "title": "Elk", "href": "https://elk.crackle.home.arpa", "icon": "/nutab/custom_favicons/elk.svg" }
       ]
