@@ -54,7 +54,7 @@ video {
 body {
   background: #000;
   color: #eee;
-  font-family: Anta, sans-serif;
+  font-family: "Anta", sans-serif;
 }
 .categories {
   display: grid;
