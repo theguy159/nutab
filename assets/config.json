@@ -4,6 +4,7 @@
       "title": "Social",
       "links": [
         { "title": "Gmail", "href": "https://gmail.com" },
+        { "title": "Proton Mail", "href": "https://mail.proton.me/u/0/inbox" },
         { "title": "Messenger", "href": "https://www.messenger.com" },
         { "title": "Reddit", "href": "https://reddit.com" },
         { "title": "Bluesky", "href": "https://bsky.app/" },
@@ -38,6 +39,14 @@
       "title": "Music",
       "links": [
         { "title": "Soundcloud", "href": "https://soundcloud.com" }
+      ]
+    },
+    {
+      "title": "Tools",
+        { "title": "Yr", "href": "https://www.yr.no/nb" },
+        { "title": "Yr - Lynkart", "href": "https://www.yr.no/nb/kart/lyn" },
+        { "title": "Kalender.no", "href": "https://kalender.no" },
+        { "title": "Tetresse", "href": "https://tetresse.harddrop.com/" }
       ]
     }
   ]
