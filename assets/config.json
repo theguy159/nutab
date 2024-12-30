@@ -43,6 +43,7 @@
     },
     {
       "title": "Tools",
+      "links": [
         { "title": "Yr", "href": "https://www.yr.no/nb" },
         { "title": "Yr - Lynkart", "href": "https://www.yr.no/nb/kart/lyn" },
         { "title": "Kalender.no", "href": "https://kalender.no" },
