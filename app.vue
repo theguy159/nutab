@@ -58,7 +58,7 @@ body {
 }
 .categories {
   display: grid;
-  grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  grid-template-columns: repeat(5, minmax(10rem, 1fr));
   gap: 2rem;
   max-width: 75vw;
   margin: 0 auto;
