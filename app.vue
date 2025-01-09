@@ -5,6 +5,7 @@
   <div>
     <NuxtRouteAnnouncer />
     <Clock format="HH:mm" />
+    <Searchbar />
     <div class="categories">
       <CategoryCard v-for="category in config.categories" :key="category.title" :title="category.title" :links="category.links" />
     </div>
