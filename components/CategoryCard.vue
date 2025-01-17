@@ -13,8 +13,10 @@ function useFallback(event) {
     <h2>{{ title }}:</h2>
     <ul>
       <li v-for="link in links">
-        <img :src="getFavicon(link)" @error="useFallback" alt="Favicon" />
-        <a :href="link.href">{{link.title}}</a>
+        <a :href="link.href">
+          <img :src="getFavicon(link)" @error="useFallback" alt="Favicon" />
+          <span>{{link.title}}</span>
+        </a>
       </li>
     </ul>
   </div>
@@ -34,6 +36,11 @@ h2 {
   font-weight: bold;
 }
 a {
+  display: grid;
+  grid-template-columns: 1.2vw 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
   font-size: 1.2vw;
   color: inherit;
   text-decoration: none;
@@ -45,12 +52,5 @@ li img {
   object-fit: cover;
   width: 1.2vw;
   height: 1.2vw;
-}
-li {
-  display: grid;
-  grid-template-columns: 1.2vw 1fr;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
 }
 </style>
