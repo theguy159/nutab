@@ -37,7 +37,8 @@
     {
       "title": "Music",
       "links": [
-        { "title": "Soundcloud", "href": "https://soundcloud.com" }
+        { "title": "Soundcloud", "href": "https://soundcloud.com" },
+        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/" }
       ]
     },
     {
@@ -47,7 +48,7 @@
         { "title": "Yr - Lynkart", "href": "https://www.yr.no/nb/kart/lyn" },
         { "title": "Kalender.no", "href": "https://kalender.no" },
         { "title": "Tetresse", "href": "https://tetresse.harddrop.com/" },
-        { "title": "Beatleader", "href": "https://beatleader.xyz/" }
+        { "title": "Beatleader", "href": "https://beatleader.com/" }
       ]
     }
   ]
