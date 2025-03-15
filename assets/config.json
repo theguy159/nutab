@@ -38,7 +38,7 @@
       "title": "Music",
       "links": [
         { "title": "Soundcloud", "href": "https://soundcloud.com" },
-        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/" }
+        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/", "icon": "/nutab/default_favicon.png" }
       ]
     },
     {
