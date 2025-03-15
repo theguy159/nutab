@@ -21,6 +21,7 @@ jobs:
         env:
           NUXT_APP_BASE_URL: /nutab/
           NITRO_PRESET: github_pages
+          COREPACK_INTEGRITY_KEYS: 0
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
