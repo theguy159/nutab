@@ -8,7 +8,7 @@
         { "title": "Messenger", "href": "https://www.messenger.com" },
         { "title": "Reddit", "href": "https://reddit.com" },
         { "title": "Bluesky", "href": "https://bsky.app/" },
-        { "title": "Elk", "href": "https://elk.crackle.home.arpa", "icon": "/nutab/custom_favicons/elk.svg" }
+        { "title": "Elk", "href": "https://elk.crackle.home.arpa", "icon": "/custom_favicons/elk.svg" }
       ]
     },
     {
@@ -18,7 +18,7 @@
         { "title": "VG", "href": "https://vg.no" },
         { "title": "Dagbladet", "href": "https://db.no" },
         { "title": "NRK", "href": "https://nrk.no" },
-        { "title": "Hacker news", "href": "https://news.ycombinator.com", "icon": "/nutab/custom_favicons/news_ycombinator_com.svg" }
+        { "title": "Hacker news", "href": "https://news.ycombinator.com", "icon": "/custom_favicons/news_ycombinator_com.svg" }
       ]
     },
     {
@@ -31,7 +31,7 @@
         { "title": "Disney Plus", "href": "https://www.disneyplus.com/en-gb/home" },
         { "title": "Max", "href": "https://play.max.com/home" },
         { "title": "Viaplay", "href": "https://viaplay.no/" },
-        { "title": "Jellyfin", "href": "https://jellyfin.crackle.home.arpa/", "icon": "/nutab/custom_favicons/jellyfin.png" }
+        { "title": "Jellyfin", "href": "https://jellyfin.crackle.home.arpa/", "icon": "/custom_favicons/jellyfin.png" }
       ]
     },
     {
@@ -42,6 +42,15 @@
       ]
     },
     {
+      "title": "Home",
+      "links": [
+        { "title": "Home Assistant", "href": "https://home.crackle.home.arpa/", "icon": "/custom_favicons/hass.png" },
+        { "title": "Portainer", "href": "https://portainer.crackle.home.arpa/", "icon": "/custom_favicons/portainer.png" },
+        { "title": "WOL", "href": "http://crackle.home.arpa:8089/wolweb/", "icon": "/default_favicon.png" },
+        { "title": "Technitium DNS Server", "href": "http://crackle.home.arpa:5380/", "icon": "/custom_favicons/technitium.ico" }
+      ]
+    },
+    {
       "title": "Tools",
       "links": [
         { "title": "Yr", "href": "https://www.yr.no/nb" },
@@ -49,6 +58,14 @@
         { "title": "Kalender.no", "href": "https://kalender.no" },
         { "title": "Tetresse", "href": "https://tetresse.harddrop.com/" },
         { "title": "Beatleader", "href": "https://beatleader.com/" }
+      ]
+    },
+    {
+      "title": "Arr",
+      "links": [
+        { "title": "Prowlarr", "href": "https://prowlarr.crackle.home.arpa/", "icon": "/custom_favicons/prowlarr.svg" },
+        { "title": "Radarr", "href": "https://radarr.crackle.home.arpa/", "icon": "/custom_favicons/radarr.png" },
+        { "title": "Sonarr", "href": "https://sonarr.crackle.home.arpa", "icon": "/custom_favicons/sonarr.svg" }
       ]
     }
   ]
