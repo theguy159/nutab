@@ -1,11 +1,18 @@
 <script setup>
 defineProps(['title', 'links'])
+const basePath = import.meta.env.MODE === 'development' ? '' : '/nutab';
+
+import favicons from '~/public/favicons/favicons.json';
 
 function getFavicon(link) {
-  return link.icon ? link.icon : `/nutab/favicons/${new URL(link.href).hostname.replace(/\./g, '_')}.ico`;
+  const hostname = new URL(link.href).hostname.replace(/\./g, '_');
+  const faviconFile = favicons[hostname] || `${hostname}.ico`;
+  
+  return link.icon ? `${basePath}${link.icon}` : `${basePath}/favicons/${faviconFile}`;
 }
+
 function useFallback(event) {
-  event.target.src = '/nutab/default_favicon.png';
+  event.target.src = `${basePath}/default_favicon.png`;
 }
 </script>
 <template>
@@ -32,16 +39,16 @@ ul {
   padding: 1.6rem;
 }
 h2 {
-  font-size: 2vw;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-weight: bold;
 }
 a {
   display: grid;
-  grid-template-columns: 1.2vw 1fr;
+  grid-template-columns: clamp(1rem, 1.2vw, 2rem) 1fr;
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
-  font-size: 1.2vw;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
   color: inherit;
   text-decoration: none;
 }
@@ -50,7 +57,7 @@ a:hover {
 }
 li img {
   object-fit: cover;
-  width: 1.2vw;
-  height: 1.2vw;
+  width: clamp(1rem, 1.2vw, 2rem);
+  height: clamp(1rem, 1.2vw, 2rem);
 }
 </style>
