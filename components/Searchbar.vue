@@ -15,7 +15,7 @@
 
 <style scoped>
 .searchbar {
-  font-size: 2vw;
+  font-size: clamp(2.4rem, 2vw, 4.80rem);
   width: 62vw;
   display: grid;
   grid-template-columns: 1fr;

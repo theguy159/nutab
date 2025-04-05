@@ -38,7 +38,7 @@
       "title": "Music",
       "links": [
         { "title": "Soundcloud", "href": "https://soundcloud.com" },
-        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/", "icon": "/default_favicon.png" }
+        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/", "icon": "/custom_favicons/botb.ico" }
       ]
     },
     {
@@ -65,7 +65,24 @@
       "links": [
         { "title": "Prowlarr", "href": "https://prowlarr.crackle.home.arpa/", "icon": "/custom_favicons/prowlarr.svg" },
         { "title": "Radarr", "href": "https://radarr.crackle.home.arpa/", "icon": "/custom_favicons/radarr.png" },
-        { "title": "Sonarr", "href": "https://sonarr.crackle.home.arpa", "icon": "/custom_favicons/sonarr.svg" }
+        { "title": "Sonarr", "href": "https://sonarr.crackle.home.arpa", "icon": "/custom_favicons/sonarr.svg" },
+        { "title": "qBittorrent", "href": "http://crackle.home.arpa:8444/", "icon": "/custom_favicons/qbit.png" }
+      ]
+    },
+    {
+      "title": "Pone",
+      "links": [
+        { "title": "/mlp/", "href": "https://boards.4channel.org/mlp/", "icon": "/custom_favicons/4chan.ico" },
+        { "title": "Fimfiction", "href": "https://fimfiction.net/", "icon": "/custom_favicons/fimfiction.png" },
+        { "title": "Equestria Daily", "href": "https://equestriadaily.com/"}
+      ]
+    },
+    {
+      "title": "Nerd",
+      "links": [
+        { "title": "Pouet", "href": "http://www.pouet.net/"},
+        { "title": "BoTB", "href": "https://battleofthebits.com/", "icon": "/custom_favicons/botb.ico" },
+        { "title": "ZIV", "href": "https://zenius-i-vanisher.com/v5.2/forums.php"}
       ]
     }
   ]
