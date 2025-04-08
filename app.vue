@@ -9,12 +9,16 @@
       { rel: 'manifest', href: '/nutab/site.webmanifest' },
     ]
   });
+  let showSearchbar = ref(true);
+  onMounted(() => {
+    showSearchbar.value = JSON.parse(localStorage.getItem('showSearchbar')) ?? true;
+  });
 </script>
 <template>
   <div>
     <NuxtRouteAnnouncer />
     <Clock format="HH:mm" />
-    <Searchbar />
+    <Searchbar v-if="showSearchbar" />
     <div class="categories">
       <CategoryCard v-for="category in config.categories" :key="category.title" :title="category.title" :links="category.links" />
     </div>
