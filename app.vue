@@ -9,13 +9,15 @@
       { rel: 'manifest', href: '/nutab/site.webmanifest' },
     ]
   });
-  let showSearchbar = ref(true);
+  const showSearchbar = ref(true);
+  const loaded = ref(false);
   onMounted(() => {
     showSearchbar.value = JSON.parse(localStorage.getItem('showSearchbar')) ?? true;
+    loaded.value = true;
   });
 </script>
 <template>
-  <div>
+  <div v-if="loaded">
     <NuxtRouteAnnouncer />
     <Clock format="HH:mm" />
     <Searchbar v-if="showSearchbar" />
