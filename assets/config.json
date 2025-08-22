@@ -38,7 +38,8 @@
       "title": "Music",
       "links": [
         { "title": "Soundcloud", "href": "https://soundcloud.com" },
-        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/", "icon": "/custom_favicons/botb.ico" }
+        { "title": "BoTB", "href": "https://botb.crackle.home.arpa/", "icon": "/custom_favicons/botb.ico" },
+        { "title": "Apple Music", "href": "https://music.apple.com" }
       ]
     },
     {
