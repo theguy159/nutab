@@ -65,6 +65,7 @@
     {
       "title": "Arr",
       "links": [
+        { "title": "Seerr", "href": "https://seerr.crackle.home.arpa/", "icon": "/custom_favicons/seerr.png" },
         { "title": "Prowlarr", "href": "https://prowlarr.crackle.home.arpa/", "icon": "/custom_favicons/prowlarr.svg" },
         { "title": "Radarr", "href": "https://radarr.crackle.home.arpa/", "icon": "/custom_favicons/radarr.png" },
         { "title": "Sonarr", "href": "https://sonarr.crackle.home.arpa", "icon": "/custom_favicons/sonarr.svg" },
