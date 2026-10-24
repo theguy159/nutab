@@ -14,7 +14,7 @@
     {
       "title": "News",
       "links": [
-        { "title": "Tek", "href": "https://tek.no" },
+        { "title": "Tek", "href": "https://tek.no", "icon": "/custom_favicons/tek_no.png" },
         { "title": "VG", "href": "https://vg.no" },
         { "title": "Dagbladet", "href": "https://db.no" },
         { "title": "NRK", "href": "https://nrk.no" },

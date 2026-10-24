@@ -1,65 +1,41 @@
-<template>
-  <div class="container">
-    <div class="inner">{{ formattedTime }}</div>
-  </div>
-</template>
+<script setup lang="ts">
+import { useStore } from '~/composables/useStore'
 
+const { settings } = useStore()
 
-<script>
-export default {
-  name: "Clock",
-  props: {
-    format: {
-      type: String,
-      default: "HH:mm:ss", // Default to 24-hour format with seconds
-    },
-  },
-  data() {
-    return {
-      currentTime: new Date(),
-      interval: null,
-    };
-  },
-  computed: {
-    formattedTime() {
-      return this.formatTime(this.currentTime, this.format);
-    },
-  },
-  methods: {
-    updateCurrentTime() {
-      this.currentTime = new Date();
-    },
-    formatTime(date, format) {
-      const parts = {
-        HH: String(date.getHours()).padStart(2, "0"),
-        mm: String(date.getMinutes()).padStart(2, "0"),
-        ss: String(date.getSeconds()).padStart(2, "0"),
-      };
+const now = ref(new Date())
+let interval: ReturnType<typeof setInterval>
 
-      Object.entries(parts).forEach(([key, value]) => {
-        format = format.replace(key, value);
-      });
+onMounted(() => {
+  interval = setInterval(() => (now.value = new Date()), 1000)
+})
 
-      return format;
-    },
-  },
-  mounted() {
-    this.interval = setInterval(this.updateCurrentTime, 1000);
-  },
-  beforeDestroy() {
-    clearInterval(this.interval);
-  },
-};
+onBeforeUnmount(() => clearInterval(interval))
+
+const formatted = computed(() => {
+  const d = now.value
+  return settings.value.clockFormat
+    .replace('HH', String(d.getHours()).padStart(2, '0'))
+    .replace('mm', String(d.getMinutes()).padStart(2, '0'))
+    .replace('ss', String(d.getSeconds()).padStart(2, '0'))
+})
 </script>
 
+<template>
+  <div class="clock">{{ formatted }}</div>
+</template>
+
 <style scoped>
-.container {
-  font-size: 10vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 4vh;
-}
-.inner {
-  justify-self: center;
+.clock {
+  font-family: "Orbitron", sans-serif;
+  font-size: 11rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-align: center;
+  color: #e8f7fa;
+  text-shadow:
+    0 0 .4rem color-mix(in srgb, var(--accent) 80%, transparent),
+    0 0 2.5rem color-mix(in srgb, var(--accent) 45%, transparent);
+  margin: 3rem 0 3.5rem;
 }
 </style>
