@@ -137,7 +137,12 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
   clip-path: polygon(var(--chamfer) 0, 100% 0, 100% calc(100% - var(--chamfer)), calc(100% - var(--chamfer)) 100%, 0 100%, 0 var(--chamfer));
   background:
     repeating-linear-gradient(0deg, rgb(255 255 255 / 0.02) 0 1px, transparent 1px 4px),
-    linear-gradient(165deg, #0c171c 0%, #070d10 55%, #04080a 100%);
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--accent) 14%, #04080a) 0%,
+      color-mix(in srgb, var(--accent) 7%, #04080a) 55%,
+      color-mix(in srgb, var(--accent) 3%, #04080a) 100%
+    );
   padding: 2rem;
 }
 
